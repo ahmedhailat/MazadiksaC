@@ -1,0 +1,80 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production builds (keep api/ for Vercel)
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# nyc test coverage
+.nyc_output
+
+# Gradle files
+.gradle/
+gradle/
+
+# Android build files
+*.apk
+*.ap_
+*.dex
+*.class
+
+# Local development files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test files
+test_cookies.txt
+db_test.txt
+cookies.txt
+onboarding_test.txt
+
+# Cache files
+.cache/
+*.cache
+
+# Replit specific files
+.local/
+.config/
+.upm/
+.cache/
+.agent_state_*.bin
+
+# Large documentation files
+*.md
+!README.md
+
+# Deployment files (keep essential ones only)
+DEPLOY_*.md
+VERCEL_*.md
+*_DEPLOYMENT_*.md
+*_GUIDE.md
+INSTANT_DEPLOY.md
+DATABASE_SETUP.md
+MAZADIKSA_*.md
