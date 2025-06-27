@@ -1,9 +1,15 @@
+
+
 {
   "version": 2,
   "builds": [
     {
       "src": "api/index.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "client/**",
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
@@ -13,21 +19,15 @@
     },
     {
       "src": "/main.css",
-      "dest": "/dist/public/main.css"
+      "dest": "/client/dist/public/main.css"
     },
     {
       "src": "/main.js",
-      "dest": "/dist/public/main.js"
+      "dest": "/client/dist/public/main.js"
     },
     {
       "src": "/(.*)",
-      "dest": "/dist/public/index.html"
+      "dest": "/client/dist/public/index.html"
     }
-  ],
-  "functions": {
-    "api/index.js": {
-      "runtime": "nodejs18.x",
-      "maxDuration": 30
-    }
-  }
+  ]
 }
